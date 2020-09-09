@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 // My Components
 import MenuList from "./organisms/MenuList";
 import LockedRecipeModal from "./organisms/LockedRecipeModal";
+import ChooseUnlockModal from "./organisms/ChooseUnlockModal";
 
 function MenuListView() {
     const dummyListData = [...Array(20).keys()];
@@ -20,7 +21,8 @@ function MenuListView() {
 
     return (
         <div>
-            <LockedRecipeModal data={lockedRecipeModalState} />
+            <ChooseUnlockModal />
+            {/*<LockedRecipeModal data={lockedRecipeModalState} />*/}
             <MenuList data={dummyListData} />
         </div>
     );

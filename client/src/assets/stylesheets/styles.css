@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
 /* TODO: なんか謎余白あり 後で修正する */
 * {
@@ -36,12 +37,22 @@
 .molecule-modal {
     width: 360px;
     background-color: #FAFAFA;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .molecule-modal-title {
     display: flex;
     padding: 16px;
     justify-content: center;
+}
+
+.molecule-choose-button {
+    display: flex;
+    height: 72px;
+    width: 100%;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /***** Organisms *****/
