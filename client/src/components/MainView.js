@@ -18,14 +18,17 @@ function MainView() {
         {image: 'http://placehold.jp/120x120.png', name: 'TEST06', isClear: false},
     ];
 
+    const dummyQuestionNum = 0;
+
     const [lockedRecipeModalState, setLockedRecipeModalState] = useState(dummyLockedRecipeModalState);
+    const [recipeIndexState, setRecipeIndexState] = useState(dummyQuestionNum);
 
     return (
-        // <QuestionView />
-        <MenuListView
-            menu={dummyMenuData}
-            recipe={lockedRecipeModalState}
-        />
+        <QuestionView questionNum={recipeIndexState} />
+        // <MenuListView
+        //     menu={dummyMenuData}
+        //     recipe={lockedRecipeModalState}
+        // />
     );
 }
 

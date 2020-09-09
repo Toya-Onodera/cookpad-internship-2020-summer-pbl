@@ -8,6 +8,29 @@
     box-sizing: border-box;
 }
 
+/***** Atoms *****/
+.atoms-checkmark {
+    position: relative;
+    display: flex;
+    /* TODO: 長方形じゃないと円にならない、なぜ… */
+    width: 22px;
+    height: 16px;
+    margin-right: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2196f3;
+    border-radius: 8px;
+}
+
+.atoms-checkmark-checked::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #2196f3;
+}
+
 /***** Molecules *****/
 .molecules-list-children {
     display: flex;
@@ -83,6 +106,18 @@
     transform: rotateZ(15deg);
 }
 
+.molecules-question-finish-button {
+    width: calc(100vw - 32px);
+    margin-top: 16px;
+    margin-left: 16px;
+    background-color: #2196F3;
+}
+
+.molecule-checkbox {
+    display: flex;
+    align-items: center;
+}
+
 /***** Organisms *****/
 .organisms-locked-recipe-modal-texts {
     padding: 16px;
@@ -111,4 +146,31 @@
     content: "\0b7";
     margin-right: 8px;
     font-weight: bold;
+}
+
+.organisms-foodstuff-heading {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* TODO: 適当な色を入れておく、直したい */
+    background-color: #D32F2F;
+}
+
+.organisms-foodstuff-heading > *:first-child {
+    margin-bottom: 16px;
+}
+
+/***** Pages *****/
+.pages-question-text {
+    padding: 16px 32px;
+}
+
+.pages-question-text > span {
+    line-height: 2.0;
+}
+
+.pages-question-checkbox {
+    padding: 16px 32px;
 }
