@@ -55,6 +55,34 @@
     align-items: center;
 }
 
+.organisms-locked-recipe-modal-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.molecules-locked-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.molecules-locked-image-title {
+    position: absolute;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.molecules-locked-image-title > .atoms-text {
+    transform: rotateZ(15deg);
+}
+
 /***** Organisms *****/
 .organisms-locked-recipe-modal-texts {
     padding: 16px;

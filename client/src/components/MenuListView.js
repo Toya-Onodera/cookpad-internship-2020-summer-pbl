@@ -10,7 +10,7 @@ function MenuListView() {
 
     const dummyLockedRecipeModalState = [
         {image: 'http://placehold.jp/120x120.png', name: 'TEST01', isClear: false},
-        {image: 'http://placehold.jp/120x120.png', name: 'TEST02', isClear: false},
+        {image: 'http://placehold.jp/120x120.png', name: 'TEST02', isClear: true},
         {image: 'http://placehold.jp/120x120.png', name: 'TEST03', isClear: false},
         {image: 'http://placehold.jp/120x120.png', name: 'TEST04', isClear: false},
         {image: 'http://placehold.jp/120x120.png', name: 'TEST05', isClear: false},
@@ -21,8 +21,8 @@ function MenuListView() {
 
     return (
         <div>
-            <ChooseUnlockModal />
-            {/*<LockedRecipeModal data={lockedRecipeModalState} />*/}
+            {/*<ChooseUnlockModal />*/}
+            <LockedRecipeModal data={lockedRecipeModalState} />
             <MenuList data={dummyListData} />
         </div>
     );
