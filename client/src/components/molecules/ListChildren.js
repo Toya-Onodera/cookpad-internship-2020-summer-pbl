@@ -10,7 +10,7 @@ function ListChildren(props) {
     };
 
     return (
-        <li className="molecules-list-children" onClick={clickHandler}>
+        <li className="molecules-list-children collection-item" onClick={clickHandler}>
             <div>
                 <Image size={props.size} src={props.src}/>
             </div>

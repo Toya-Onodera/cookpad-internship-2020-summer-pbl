@@ -4,6 +4,10 @@ import React from 'react';
 import Text from "../atoms/Text";
 
 function Modal(props) {
+    // TODO: 後で閉じる動作を入れる
+    const close = () => {
+    };
+
     return (
         <div className="molecule-modal-back-layer">
             <div className="molecule-modal">

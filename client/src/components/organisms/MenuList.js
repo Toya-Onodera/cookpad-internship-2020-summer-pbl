@@ -15,7 +15,7 @@ function MenuList(props) {
     });
 
     return (
-        <ul>
+        <ul className="collection">
             {Children}
         </ul>
     );

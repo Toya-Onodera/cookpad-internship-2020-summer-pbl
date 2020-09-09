@@ -1,1 +1,75 @@
 @charset "UTF-8";
+
+/* TODO: なんか謎余白あり 後で修正する */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** Molecules *****/
+.molecules-list-children {
+    display: flex;
+}
+
+.molecules-list-children.collection-item {
+    padding: 0;
+}
+
+.molecules-list-children > div:last-child {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.molecule-modal-back-layer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.molecule-modal {
+    width: 360px;
+    background-color: #FAFAFA;
+}
+
+.molecule-modal-title {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+}
+
+/***** Organisms *****/
+.organisms-locked-recipe-modal-texts {
+    padding: 16px;
+}
+
+.organisms-locked-recipe-modal-texts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.organisms-locked-recipe-modal-texts > span {
+    margin-bottom: 4px;
+}
+
+.organisms-locked-recipe-modal-texts > span:nth-child(even) {
+    margin-right: 22%;
+    margin-left: 3%;
+}
+
+.organisms-locked-recipe-modal-texts > span:nth-child(odd) {
+    margin-right: 3%;
+    margin-left: 22%;
+}
+
+.organisms-locked-recipe-modal-texts > span::before {
+    content: "\0b7";
+    margin-right: 8px;
+    font-weight: bold;
+}
