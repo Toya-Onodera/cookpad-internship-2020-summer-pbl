@@ -2,10 +2,10 @@ import React from 'react';
 
 // My Components
 
-function App() {
+function MainView() {
     return (
         <span>TEST</span>
     );
 }
 
-export default App;
+export default MainView;
