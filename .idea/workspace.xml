@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e0e5e1-84f5-4332-bbbe-4ab183b08e4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/molecules/Modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/organisms/FoodstuffList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/organisms/LockedRecipeModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MenuListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MenuListView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/atoms/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/atoms/Image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/atoms/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/atoms/Text.js" afterDir="false" />
@@ -61,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599615597630</updated>
-      <workItem from="1599615599307" duration="4810000" />
+      <workItem from="1599615599307" duration="7502000" />
     </task>
     <servers />
   </component>

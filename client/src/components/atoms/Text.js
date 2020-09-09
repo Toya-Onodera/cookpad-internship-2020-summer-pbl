@@ -2,7 +2,7 @@ import React from 'react';
 
 function Text(props) {
     return (
-        <p className="atoms-text">{props.text}</p>
+        <span className="atoms-text">{props.text}</span>
     );
 }
 
