@@ -39,13 +39,13 @@ function QuestionView(props) {
                 name={question.name}
             />
 
-            <div className="pages-question-text">
+            <div className="pages-question-text pages-question-border-bottom">
                 <Text
                     text={question.problem}
                 />
             </div>
 
-            <div className="pages-question-checkbox">
+            <div className="pages-question-checkbox pages-question-border-bottom">
                 {QuestionAnswerView}
             </div>
 

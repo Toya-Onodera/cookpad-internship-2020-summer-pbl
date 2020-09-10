@@ -108,7 +108,7 @@
 
 .molecules-question-finish-button {
     width: calc(100vw - 32px);
-    margin-top: 16px;
+    margin-top: 18px;
     margin-left: 16px;
     background-color: #2196F3;
 }
@@ -116,6 +116,10 @@
 .molecule-checkbox {
     display: flex;
     align-items: center;
+}
+
+.molecule-checkbox:not(:first-child) {
+    margin-top: 10px;
 }
 
 /***** Organisms *****/
@@ -164,7 +168,10 @@
 
 /***** Pages *****/
 .pages-question-text {
-    padding: 16px 32px;
+    display: flex;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
 }
 
 .pages-question-text > span {
@@ -172,5 +179,21 @@
 }
 
 .pages-question-checkbox {
-    padding: 16px 32px;
+    padding: 18px 32px;
+}
+
+.pages-question-border-bottom {
+    position: relative;
+}
+
+.pages-question-border-bottom::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 32px);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #eee;
 }
