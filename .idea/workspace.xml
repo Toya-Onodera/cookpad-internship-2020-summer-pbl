@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e0e5e1-84f5-4332-bbbe-4ab183b08e4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/public/images/image_ios_camera.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CameraView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/assets/stylesheets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/stylesheets/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/QuestionView.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/QuestionView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MainView.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MainView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +50,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/components/molecules" />
+      <recent name="$PROJECT_DIR$/client/public/images" />
       <recent name="$PROJECT_DIR$/client/src/assets/images" />
+      <recent name="$PROJECT_DIR$/client/src/components/molecules" />
       <recent name="$PROJECT_DIR$/client/src/components/organisms" />
     </key>
   </component>
@@ -59,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599615597630</updated>
-      <workItem from="1599615599307" duration="24179000" />
+      <workItem from="1599615599307" duration="26738000" />
     </task>
     <servers />
   </component>

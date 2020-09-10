@@ -197,3 +197,33 @@
     margin: 0 auto;
     background-color: #eee;
 }
+
+.pages-camera {
+    /* TODO: とりあえず Fixed で中央にしてごり押す -> height: 100% だとサイズ取れず、height: 100vh だと大きすぎるので */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("/images/image_ios_camera.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pages-snap-button {
+    position: relative;
+    /* TODO: サイズは適当、時間あったらいい感じに合わせる */
+    width: 20vw;
+    height: 20vw;
+    top: 81.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pages-snap-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
