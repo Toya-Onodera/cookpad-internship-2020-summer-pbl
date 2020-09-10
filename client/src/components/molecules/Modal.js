@@ -4,13 +4,13 @@ import React from 'react';
 import Text from "../atoms/Text";
 
 function Modal(props) {
-    // TODO: 後で閉じる動作を入れる
-    const close = () => {
+    const onModalMainLayerClickHandler = (e) => {
+        e.stopPropagation();
     };
 
     return (
-        <div className="molecule-modal-back-layer">
-            <div className="molecule-modal">
+        <div className="molecule-modal-back-layer" onClick={props.closeMethod} >
+            <div className="molecule-modal" onClick={onModalMainLayerClickHandler} >
                 <div className="molecule-modal-title">
                     <Text text={props.title}/>
                 </div>

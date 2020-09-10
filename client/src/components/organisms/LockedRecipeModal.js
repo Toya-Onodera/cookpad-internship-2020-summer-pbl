@@ -13,8 +13,8 @@ function LockedRecipeModal(props) {
 
     const Images = props.data.map((e, i) => {
         return (e.isClear)
-            ? <Image key={`LockedRecipeModalImage-${i}`} src={e.image} size={120} alt={e.name}/>
-            : <LockedImage key={`LockedRecipeModalImage-${i}`} image={e.image} size={120} name={e.name}/>
+            ? <Image key={`LockedRecipeModalImage-${i}`} src={e.image} size={120} alt={e.name} />
+            : <LockedImage key={`LockedRecipeModalImage-${i}`} image={e.image} size={120} name={e.name} onClick={props.onClick} />
     });
 
     const Texts = props.data.map((e, i) => {
@@ -22,7 +22,7 @@ function LockedRecipeModal(props) {
     });
 
     return (
-        <Modal title="以下の食材が必要です">
+        <Modal title="以下の食材が必要です" closeMethod={props.closeMethod} >
             <div className="organisms-locked-recipe-modal-images">
                 {Images}
             </div>

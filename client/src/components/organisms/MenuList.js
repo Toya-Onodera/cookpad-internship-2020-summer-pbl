@@ -11,6 +11,7 @@ function MenuList(props) {
                 size={100}
                 src="http://placehold.jp/100x100.png"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor"
+                onClick={props.onClick}
             />);
     });
 

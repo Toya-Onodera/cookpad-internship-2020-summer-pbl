@@ -5,12 +5,8 @@ import Image from "../atoms/Image";
 import Text from "../atoms/Text";
 
 function ListChildren(props) {
-    const clickHandler = () => {
-        alert(`TODO: あとで遷移するようにする -> index: ${props.index}`);
-    };
-
     return (
-        <li className="molecules-list-children collection-item" onClick={clickHandler}>
+        <li className="molecules-list-children collection-item" onClick={props.onClick}>
             <div>
                 <Image size={props.size} src={props.src}/>
             </div>

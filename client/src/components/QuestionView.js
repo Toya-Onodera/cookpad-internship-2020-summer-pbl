@@ -35,6 +35,11 @@ function QuestionView(props) {
         )
     })
 
+    // TODO: モーダルをいい感じに表示する方法が思い浮かばなかったのでゴリ押し
+    const onQuestionFinishButtonClickHandler = () => {
+        sessionStorage.setItem('isModal', 'true');
+    };
+
     return (
         <div>
             <FoodstuffHeading
@@ -53,7 +58,7 @@ function QuestionView(props) {
             </div>
 
             <div className="pages-question-finish-button">
-                <Link to="/">
+                <Link to="/" onClick={onQuestionFinishButtonClickHandler}>
                     <QuestionFinishButton />
                 </Link>
             </div>

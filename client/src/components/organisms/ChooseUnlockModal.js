@@ -11,26 +11,28 @@ import ChooseButton from "../molecules/ChooseButton";
 import CameraSrc from "../../assets/images/icon_camera.png";
 import QuestionSrc from "../../assets/images/icon_question.png";
 
-function ChooseUnlockModal() {
+function ChooseUnlockModal(props) {
     const choiceList = [
         { text: 'Camera', src: CameraSrc, backgroundColor: '#3F51B5' },
         { text: 'Question', src:  QuestionSrc, backgroundColor: '#009688' }
     ];
 
-    const Buttons = choiceList.map((e) => {
+    const Buttons = choiceList.map((e, i) => {
         return (
-            <Link to={`/${e.text.toLowerCase()}`}>
+            <Link
+                to={`/${e.text.toLowerCase()}`}
+                key={`ChooseButton-${i}`}
+            >
                 <ChooseButton
                     text={e.text}
                     src={e.src}
                     backgroundColor={e.backgroundColor}
-                    onClick={e.onClick}
                 />
             </Link>);
     });
 
     return (
-        <Modal title="どちらの方法で制限を解除しますか？">
+        <Modal title="どちらの方法で制限を解除しますか？" closeMethod={props.closeMethod} >
             {Buttons}
         </Modal>
     );
