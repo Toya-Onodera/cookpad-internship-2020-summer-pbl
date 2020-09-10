@@ -46,6 +46,10 @@
     padding: 10px;
 }
 
+.molecules-list-children > div:first-child {
+    height: 100px;
+}
+
 .molecule-modal-back-layer {
     position: fixed;
     display: flex;
