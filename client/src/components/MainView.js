@@ -1,4 +1,10 @@
 import React, {useState} from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 // My Components
 import MenuListView from "./MenuListView";
@@ -25,12 +31,22 @@ function MainView() {
     const [recipeIndexState, setRecipeIndexState] = useState(dummyQuestionNum);
 
     return (
-        <CameraView />
-        // <QuestionView questionNum={recipeIndexState} />
-        // <MenuListView
-        //     menu={dummyMenuData}
-        //     recipe={lockedRecipeModalState}
-        // />
+        <Router>
+            <Switch>
+                <Route path="/camera">
+                    <CameraView />
+                </Route>
+                <Route path="/question">
+                    <QuestionView questionNum={recipeIndexState} />
+                </Route>
+                <Route path="/">
+                    <MenuListView
+                        menu={dummyMenuData}
+                        recipe={lockedRecipeModalState}
+                    />
+                </Route>
+            </Switch>
+        </Router>
     );
 }
 
