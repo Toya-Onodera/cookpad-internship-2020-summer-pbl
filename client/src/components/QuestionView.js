@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import {
+    Link
+} from "react-router-dom";
 
 // My Components
 import Text from "./atoms/Text";
@@ -50,7 +53,9 @@ function QuestionView(props) {
             </div>
 
             <div className="pages-question-finish-button">
-                <QuestionFinishButton />
+                <Link to="/">
+                    <QuestionFinishButton />
+                </Link>
             </div>
         </div>
     );

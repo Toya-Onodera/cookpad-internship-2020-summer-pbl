@@ -9,7 +9,7 @@ function MenuListView(props) {
     return (
         <div>
             {/*TODO: クリックしたら動的にモーダルが切り替わるようにする*/}
-            {/*<ChooseUnlockModal />*/}
+            <ChooseUnlockModal />
             {/*<LockedRecipeModal data={props.recipe} />*/}
             <MenuList data={props.menu} />
         </div>
