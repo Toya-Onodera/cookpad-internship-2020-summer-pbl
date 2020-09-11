@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+/* TODO: なんか謎余白あり 後で修正する */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** Atoms *****/
+.atoms-checkmark {
+    position: relative;
+    display: flex;
+    /* TODO: 長方形じゃないと円にならない、なぜ… */
+    width: 22px;
+    height: 16px;
+    margin-right: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2196f3;
+    border-radius: 8px;
+}
+
+.atoms-checkmark-checked::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #2196f3;
+}
+
+/***** Molecules *****/
+.molecules-list-children {
+    display: flex;
+}
+
+.molecules-list-children.collection-item {
+    padding: 0;
+}
+
+.molecules-list-children > div:last-child {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.molecules-list-children > div:first-child {
+    height: 100px;
+}
+
+.molecule-modal-back-layer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.molecule-modal {
+    width: 360px;
+    background-color: #FAFAFA;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.molecule-modal-title {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+}
+
+.molecule-choose-button {
+    display: flex;
+    height: 72px;
+    width: 100%;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.organisms-locked-recipe-modal-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.molecules-locked-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.molecules-locked-image-title {
+    position: absolute;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.molecules-locked-image-title > .atoms-text {
+    transform: rotateZ(15deg);
+}
+
+.molecules-question-finish-button {
+    width: calc(100vw - 32px);
+    margin-top: 18px;
+    margin-left: 16px;
+    background-color: #2196F3;
+}
+
+.molecule-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.molecule-checkbox:not(:first-child) {
+    margin-top: 10px;
+}
+
+/***** Organisms *****/
+.organisms-locked-recipe-modal-texts {
+    padding: 16px;
+}
+
+.organisms-locked-recipe-modal-texts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.organisms-locked-recipe-modal-texts > span {
+    margin-bottom: 4px;
+}
+
+.organisms-locked-recipe-modal-texts > span:nth-child(even) {
+    margin-right: 22%;
+    margin-left: 3%;
+}
+
+.organisms-locked-recipe-modal-texts > span:nth-child(odd) {
+    margin-right: 3%;
+    margin-left: 22%;
+}
+
+.organisms-locked-recipe-modal-texts > span::before {
+    content: "\0b7";
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.organisms-foodstuff-heading {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* TODO: 適当な色を入れておく、直したい */
+    background-color: #D32F2F;
+}
+
+.organisms-foodstuff-heading > *:first-child {
+    margin-bottom: 16px;
+}
+
+/***** Pages *****/
+.pages-question-text {
+    display: flex;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages-question-text > span {
+    line-height: 2.0;
+}
+
+.pages-question-checkbox {
+    padding: 18px 32px;
+}
+
+.pages-question-border-bottom {
+    position: relative;
+}
+
+.pages-question-border-bottom::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 32px);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.pages-camera {
+    /* TODO: とりあえず Fixed で中央にしてごり押す -> height: 100% だとサイズ取れず、height: 100vh だと大きすぎるので */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("/images/image_ios_camera.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pages-snap-button {
+    position: relative;
+    /* TODO: サイズは適当、時間あったらいい感じに合わせる */
+    width: 20vw;
+    height: 20vw;
+    top: 81.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pages-snap-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
