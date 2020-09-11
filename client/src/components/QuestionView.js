@@ -10,6 +10,7 @@ import QuestionFinishButton from "./molecules/QuestionFinishButton";
 import FoodstuffHeading from "./organisms/FoodstuffHeading";
 
 function QuestionView(props) {
+    // fetch(`http://192.168.33.10:3000/answer/2`)
     // TODO: ここは実際に取得する
     const question = {
         image: 'http://placehold.jp/120x120.png',

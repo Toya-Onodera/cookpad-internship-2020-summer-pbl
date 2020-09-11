@@ -3,7 +3,7 @@ class CreateVegetables < ActiveRecord::Migration[6.0]
     create_table :vegetables do |t|
     t.string :j_name
     t.string :e_name
-    t.binary :image
+    t.string :image
       t.timestamps
     end
   end

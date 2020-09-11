@@ -16,7 +16,7 @@ _vegetables = []
 vegetable_japan_name = %w[パプリカ トマト 玉ねぎ なす かぼちゃ]
 vegetable_english_name = %w[Paprika Tomato Onion Eggplant Pumpkin]
 (0 .. (vegetable_japan_name.length - 1)).each do |i|
-  _vegetables << Vegetable.create!(j_name: vegetable_japan_name[i], e_name: vegetable_english_name[i], image: Rails.root.join("spec/fixtures/vegetable-0#{i + 1}.jpg"))
+  _vegetables << Vegetable.create!(j_name: vegetable_japan_name[i], e_name: vegetable_english_name[i], image: "https://ont-develop.work/images/vegetable-0#{i + 1}.jpg")
 end
 
 # レシピ内情報を生成する
