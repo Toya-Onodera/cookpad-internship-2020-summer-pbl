@@ -44,8 +44,9 @@ ActiveRecord::Schema.define(version: 2020_09_10_082634) do
   end
 
   create_table "vegetables", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "name"
-    t.string "image"
+    t.string "j_name"
+    t.string "e_name"
+    t.binary "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

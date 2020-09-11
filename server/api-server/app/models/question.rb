@@ -1,4 +1,4 @@
 class Question < ApplicationRecord
     has_many :answers
-    belong_to :vegetable
+    belongs_to :vegetable
 end
